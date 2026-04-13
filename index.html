@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RHS PCA2 Plant ID</title>
+  <title>RHS Weekly 10 Plant Quiz</title>
   <style>
     * {
       box-sizing: border-box;
@@ -740,7 +740,7 @@
     const currentNumber = parseCardNumber(card.id);
 
     if (currentNumber) {
-      return `Plant ${currentNumber} of 110`;
+      return `Plant ${currentIndex + 1} of ${currentCards.length}`;
     }
 
     return `Card ${currentIndex + 1} of ${currentCards.length}`;
