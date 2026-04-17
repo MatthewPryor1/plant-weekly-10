@@ -230,6 +230,17 @@
       flex-wrap: wrap;
     }
 
+    .extra-back-info {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--muted-2);
+    text-align: left;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
     .quiz-card,
     .results-card {
       background: var(--panel);
@@ -486,6 +497,11 @@
         font-size: 18px;
       }
 
+      .extra-back-info {
+      font-size: 16px;
+      line-height: 1.45;
+      }
+
       .quiz-nav,
       .back-actions,
       .result-links {
@@ -660,7 +676,12 @@
       const common = getCommonName(backText);
       return common ? `(${escapeHtml(common)})` : "";
     }
-
+    
+function getExtraBackInfo(backText) {
+  const parts = String(backText || "").split("\n\n");
+  return parts.slice(2).join("\n\n").trim();
+}
+    
     function getImageArray(card) {
       return [
         card.front_image_url_1,
@@ -747,16 +768,19 @@
             </div>
 
             <div class="card-face card-back">
-              <div style="width: 100%;">
-                <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
-                <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
-                <div class="back-actions">
-                  ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div style="width: 100%;">
+    <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
+    <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
+    ${
+      getExtraBackInfo(card.back_text)
+        ? `<div class="extra-back-info">${escapeHtml(getExtraBackInfo(card.back_text)).replace(/\n/g, "<br>")}</div>`
+        : ""
+    }
+    <div class="back-actions">
+      ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
+    </div>
+  </div>
+</div>
 
         <div class="study-controls">
           <button class="nav-btn secondary" onclick="prevCard()" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
