@@ -734,63 +734,65 @@ function getExtraBackInfo(backText) {
     }
 
     function renderStudyMode() {
-      const currentCards = getCurrentCards();
+  const currentCards = getCurrentCards();
 
-      if (!currentCards.length) {
-        document.getElementById("counter").textContent = "No cards";
-        document.getElementById("app").innerHTML = `
-          <div class="results-card">
-            <p class="empty-message">No cards available in this deck.</p>
+  if (!currentCards.length) {
+    document.getElementById("counter").textContent = "No cards";
+    document.getElementById("app").innerHTML = `
+      <div class="results-card">
+        <p class="empty-message">No cards available in this deck.</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (currentIndex >= currentCards.length) currentIndex = 0;
+
+  const card = currentCards[currentIndex];
+  const images = getImageArray(card);
+  const rhsUrl = getRhsUrl(card);
+
+  document.getElementById("counter").textContent = getPlantPositionText();
+
+  document.getElementById("app").innerHTML = `
+    <div class="card-wrap">
+      <div class="flashcard ${showingAnswer ? 'flipped' : ''}" id="flashcard">
+        <div class="card-face card-front">
+          <div class="card-meta">
+            <div class="card-hint">Tap card or button to flip</div>
           </div>
-        `;
-        return;
-      }
 
-      if (currentIndex >= currentCards.length) currentIndex = 0;
-
-      const card = currentCards[currentIndex];
-      const images = getImageArray(card);
-      const rhsUrl = getRhsUrl(card);
-
-      document.getElementById("counter").textContent = getPlantPositionText();
-
-      document.getElementById("app").innerHTML = `
-        <div class="card-wrap">
-          <div class="flashcard ${showingAnswer ? 'flipped' : ''}" id="flashcard">
-            <div class="card-face card-front">
-              <div class="card-meta">
-                <div class="card-hint">Tap card or button to flip</div>
-              </div>
-
-              <div class="images ${getImageClass(images)}">
-                ${images.map(url => `<img src="${escapeHtml(url)}" alt="Plant image" onerror="this.style.display='none'">`).join("")}
-              </div>
-            </div>
-
-            <div class="card-face card-back">
-  <div style="width: 100%;">
-    <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
-    <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
-    ${
-      getExtraBackInfo(card.back_text)
-        ? `<div class="extra-back-info">${escapeHtml(getExtraBackInfo(card.back_text)).replace(/\n/g, "<br>")}</div>`
-        : ""
-    }
-    <div class="back-actions">
-      ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
-    </div>
-  </div>
-</div>
-
-        <div class="study-controls">
-          <button class="nav-btn secondary" onclick="prevCard()" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
-          <button class="nav-btn" onclick="toggleAnswer()">${showingAnswer ? "Show Front" : "Flip Card"}</button>
-          <button class="nav-btn secondary" onclick="nextCard()" ${currentIndex === currentCards.length - 1 ? "disabled" : ""}>Next</button>
+          <div class="images ${getImageClass(images)}">
+            ${images.map(url => `<img src="${escapeHtml(url)}" alt="Plant image" onerror="this.style.display='none'">`).join("")}
+          </div>
         </div>
-      `;
 
-      attachStudyCardInteractions();
-    }
+        <div class="card-face card-back">
+          <div style="width: 100%;">
+            <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
+            <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
+            ${
+              getExtraBackInfo(card.back_text)
+                ? `<div class="extra-back-info">${escapeHtml(getExtraBackInfo(card.back_text)).replace(/\n/g, "<br>")}</div>`
+                : ""
+            }
+            <div class="back-actions">
+              ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="study-controls">
+      <button class="nav-btn secondary" onclick="prevCard()" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
+      <button class="nav-btn" onclick="toggleAnswer()">${showingAnswer ? "Show Front" : "Flip Card"}</button>
+      <button class="nav-btn secondary" onclick="nextCard()" ${currentIndex === currentCards.length - 1 ? "disabled" : ""}>Next</button>
+    </div>
+  `;
+
+  attachStudyCardInteractions();
+}
 
     function renderQuizMode() {
       if (showingResults) {
