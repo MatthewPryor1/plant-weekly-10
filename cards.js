@@ -1,82 +1,98 @@
 const cards = [
   {
-    "id": "card_81",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-PUB0021577_1148.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/visi139963.jpg",
+    "id": "card_51",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/vaem03257.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/WSYD0012675.jpg",
     "front_image_url_3": "",
-    "rhs_url": "https://www.rhs.org.uk/plants/10041/lewisia-cotyledon/details",
-    "back_text": "Lewisia cotyledon\n\n(Siskiyou lewisia)"
+    "rhs_url": "https://www.rhs.org.uk/plants/24962/aegopodium-podagraria/details",
+    "back_text": "Aegopodium podagraria\n\n(ground elder)\n\naka goatweed\n\naegos (Greek) = goat\npodi (Gr) = foot\n\"little goat's foot\"\npoda/i (English) = foot\npodagia = foot gout\nagraria (Latin) = cultivated land\n\nGood for goats & good for gout!"
   },
   {
-    "id": "card_96",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-NHDE18096_1572.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-NHDE18097_1572.jpg",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/sepa16092.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/14184/pulsatilla-vulgaris/details",
-    "back_text": "Pulsatilla vulgaris\n\n(pasqueflower)"
-  },
-  {
-    "id": "card_75",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-RHS_April_2018_101_814.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-NHAB18014_814.jpg",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-NHAB18013_814.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/7403/fritillaria-meleagris/details",
-    "back_text": "Fritillaria meleagris\n\n(snake’s head fritillary)"
-  },
-  {
-    "id": "card_94",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_MAR0015575_1527.JPG",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_PUB0001565_1527.JPG",
+    "id": "card_55",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036008_3483.jpg",
+    "front_image_url_2": "",
     "front_image_url_3": "",
-    "rhs_url": "https://www.rhs.org.uk/plants/13901/primula-vulgaris-%28pr-prim%29/details",
-    "back_text": "Primula vulgaris\n\n(primrose)"
+    "rhs_url": "https://www.rhs.org.uk/plants/94326/bellis-perennis/details",
+    "back_text": "Bellis perennis\n\n(daisy)\n\nBellis (Latin) = pretty / beautiful\nperennis (La): per = through, annus = year\n= everlasting perennial"
   },
   {
-    "id": "card_99",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0026549_5929.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_RHS-0008933_4068.JPG",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/visi11997.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/58880/rudbeckia-fulgida-var-deamii/details",
-    "back_text": "Rudbeckia fulgida var. deamii\n\n(Deam’s coneflower)"
+    "id": "card_58",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-MAR0015606_295.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0015827_3628.jpg",
+    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/elbo68770.jpg",
+    "rhs_url": "https://www.rhs.org.uk/plants/2803/caltha-palustris/details",
+    "back_text": "Caltha palustris\n\n(marsh marigold)\n\nCaltha (Greek) = goblet\npalustris (Latin) = found in marshy places"
   },
   {
-    "id": "card_100",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-_KOT1102_1760.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/TN_11_Salvia_nemorosa_'Ostfriesland'_TM_Trials_Field_(5).jpg",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/phbe03185.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/78346/salvia-nemorosa-ostfriesland/details",
-    "back_text": "Salvia nemorosa 'Ostfriesland'\n\n(Balkan clary)"
+    "id": "card_59",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS-0005209.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/PUB0038602.jpg",
+    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/PUB0038603.jpg",
+    "rhs_url": "https://www.rhs.org.uk/plants/20686/calystegia-sepium/details",
+    "back_text": "Calystegia sepium\n\n(hedge bindweed)\n\ncalyx (Greek) = cup / sepals\nstegia (Gr) = covered roof\nie large bracts from calyx\nsepium (Latin) = hedges / fences"
   },
   {
-    "id": "card_102",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_RHS-0008642_1882.JPG",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/Web_Use-_KOT9473_1882.jpg",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_HYDE_HALL_067.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/17802/stipa-gigantea/details",
-    "back_text": "Stipa gigantea\n\n(golden oats)"
-  },
-  {
-    "id": "card_103",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSYD0012099_5374.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/elbo47113.jpg",
-    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/brer03557.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/340226/symphyotrichum-novi-belgii-fellowship-%28d%29/details",
-    "back_text": "Symphyotrichum novi-belgii 'Fellowship'\n\n(New York aster)"
-  },
-  {
-    "id": "card_109",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/MAR0003574_1993.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0020807_1993.jpg",
+    "id": "card_62",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_WSYD0015991_11873.JPG",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_WSYD0014517_11873.JPG",
     "front_image_url_3": "",
-    "rhs_url": "https://www.rhs.org.uk/plants/42079/verbena-bonariensis/details",
-    "back_text": "Verbena bonariensis\n\n(purple top)"
+    "rhs_url": "https://www.rhs.org.uk/plants/105534/capsella-bursa-pastoris/details",
+    "back_text": "Capsella bursa-pastoris\n\n(shepherd’s purse)\n\ncapsa (Latin) = case / box / chest\n-ella = little / small\nbursa (La / Greek) = pouch / purse\npastoris (La) = pastor / shepherd\n\n\"Little shepherd's purse\""
   },
   {
-    "id": "card_85",
-    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0034554_8807.jpg",
-    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/phbe04619.jpg",
+    "id": "card_82",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0007338_3712.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/visi71408.jpg",
+    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS-0004025.jpg",
+    "rhs_url": "https://www.rhs.org.uk/plants/10394/lobelia-cardinalis/details",
+    "back_text": "Lobelia cardinalis\n\n(cardinal flower)\n\nAfter Flemish botanist Matthias de L'Obel (1538–1616)\nphysician to James I / VI\ncardinalis (Latin) = scarlet / cardinal red"
+  },
+  {
+    "id": "card_93",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0034360_3354.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/elbo02814.jpg",
     "front_image_url_3": "",
-    "rhs_url": "https://www.rhs.org.uk/plants/10920/matteuccia-struthiopteris/details",
-    "back_text": "Matteuccia struthiopteris\n\n(shuttlecock fern)"
+    "rhs_url": "https://www.rhs.org.uk/plants/13502/pontederia-cordata/details",
+    "back_text": "Pontederia cordata\n\n(pickerel weed)\n\nAfter J Pontederia, botanist at Padua\ncordata (Latin) = heart-shaped\n(leaves)\n\nHardy aquatic"
+  },
+  {
+    "id": "card_97",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_WSYD0016065_8367.JPG",
+    "front_image_url_2": "",
+    "front_image_url_3": "",
+    "rhs_url": "https://www.rhs.org.uk/plants/14373/ranunculus-repens/details",
+    "back_text": "Ranunculus repens\n\n(creeping buttercup)\n\nrana (Latin) = frog\n(likes damp areas)\n-culus = little\nrepens (La) = creeping\n\n\"Creeping little frog\""
+  },
+  {
+    "id": "card_101",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/RHS_WSYD0012466_11855.JPG",
+    "front_image_url_2": "",
+    "front_image_url_3": "",
+    "rhs_url": "https://www.rhs.org.uk/plants/119111/stellaria-media/details",
+    "back_text": "Stellaria media\n\n(common chickweed)\n\nStellaria (Latin) = star\nmedia (La) = intermediate / medium-sized"
+  },
+  {
+    "id": "card_105",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/eyma01394.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/vaem09113.jpg",
+    "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/sepa11920.jpg",
+    "rhs_url": "https://www.rhs.org.uk/plants/232327/taraxacum-officinale/details",
+    "back_text": "Taraxacum officinale\n\n(dandelion)\n\ntaraxis (Greek / Persian) = bitter / disorder\nakas (Gr) = remedy\nofficina (Latin) = workshop / pharmacy / monastic storeroom\n\nHistoric medieval use"
+  },
+  {
+    "id": "card_107",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0035821_4099.jpg",
+    "front_image_url_2": "",
+    "front_image_url_3": "",
+    "rhs_url": "https://www.rhs.org.uk/plants/18565/typha-angustifolia/details",
+    "back_text": "Typha angustifolia\n\n(lesser bulrush)\n\nTypha (Greek) = cat's tail\n(Ti-fa)\nangustifolia (Latin) = narrow-leaved"
+  },
+  {
+    "id": "card_108",
+    "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/sepa04809.jpg",
+    "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/WSYD0011544.jpg",
+    "front_image_url_3": "",
+    "rhs_url": "https://www.rhs.org.uk/plants/18618/urtica-dioica/details",
+    "back_text": "Urtica dioica\n\n(common stinging nettle)\n\nUrtica (Latin) = to burn\ndioica (Greek)\ndi = two\noikia = houses\n\n(as dioecious - plant reproduction)"
   }
 ];
