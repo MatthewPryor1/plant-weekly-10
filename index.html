@@ -43,13 +43,6 @@
       line-height: 1.1;
     }
 
-    .subhead {
-      text-align: center;
-      margin: 0 0 14px 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
     .counter {
       text-align: center;
       margin: 0 0 12px 0;
@@ -595,7 +588,6 @@
 <body>
   <div class="wrap">
     <h1>Weekly Plant ID</h1>
-    <p class="subhead">This week’s plants</p>
     <p class="counter" id="counter"></p>
 
     <div class="top-controls">
@@ -797,7 +789,9 @@ function getExtraBackInfo(backText) {
              </div>
           </div>
         </div>
-
+      </div>
+    </div>
+    
     <div class="study-controls">
       <button class="nav-btn secondary" onclick="prevCard()" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
       <button class="nav-btn" onclick="toggleAnswer()">${showingAnswer ? "Show Front" : "Flip Card"}</button>
