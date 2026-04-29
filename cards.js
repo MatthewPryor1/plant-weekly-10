@@ -4,7 +4,7 @@ const cards = [
     "front_image_url_1": "https://apps.rhs.org.uk/plantselectorimages/detail/elbo68052.jpg",
     "front_image_url_2": "https://apps.rhs.org.uk/plantselectorimages/detail/sepa15932.jpg",
     "front_image_url_3": "https://apps.rhs.org.uk/plantselectorimages/detail/sepa11442.jpg",
-    "rhs_url": "https://www.rhs.org.uk/plants/384/acer-palmatum/details",
+    "rhs_url": "https://www.rhs.org.uk/plants/225/acer-palmatum/details",
     "back_text": "Acer palmatum\n\n(Japanese maple)\n\nacer (Latin) = hard / sharp\npalmatum (Latin) = like a palm / hand\n(palmate leaves)"
   },
   {
