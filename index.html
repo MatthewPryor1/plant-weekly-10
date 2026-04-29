@@ -210,16 +210,25 @@
       min-width: 112px;
     }
 
+        .back-answer-block {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
     .answer {
-      font-size: 32px;
-      line-height: 1.4;
+      font-size: 40px;
+      line-height: 1.25;
       white-space: pre-wrap;
+      font-weight: 600;
+      text-align: center;
     }
 
     .common-name-display {
-      margin-top: 14px;
-      font-size: 20px;
+      margin-top: 12px;
+      font-size: 22px;
       color: var(--muted);
+      text-align: center;
     }
 
     .back-actions {
@@ -231,15 +240,19 @@
     }
 
     .extra-back-info {
-    margin-top: 18px;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--muted-2);
-    text-align: left;
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      margin-top: 22px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--muted-2);
+      text-align: left;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
     
     .quiz-card,
     .results-card {
@@ -489,8 +502,8 @@
         backface-visibility: visible;
       }
 
-      .answer {
-        font-size: 24px;
+            .answer {
+        font-size: 28px;
       }
 
       .common-name-display {
@@ -498,8 +511,9 @@
       }
 
       .extra-back-info {
-      font-size: 16px;
-      line-height: 1.45;
+        font-size: 16px;
+        line-height: 1.45;
+        padding: 14px 16px;
       }
 
       .quiz-nav,
@@ -580,7 +594,7 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>RHS Weekly Plant ID</h1>
+    <h1>Weekly Plant ID</h1>
     <p class="subhead">This week’s plants</p>
     <p class="counter" id="counter"></p>
 
@@ -767,22 +781,22 @@ function getExtraBackInfo(backText) {
           </div>
         </div>
 
-        <div class="card-face card-back">
+    <div class="card-face card-back">
           <div style="width: 100%;">
-            <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
-            <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
-            ${
-              getExtraBackInfo(card.back_text)
-                ? `<div class="extra-back-info">${escapeHtml(getExtraBackInfo(card.back_text)).replace(/\n/g, "<br>")}</div>`
-                : ""
-            }
+                <div class="back-answer-block">
+                  <div class="answer">${formatLatinForDisplay(card.back_text)}</div>
+                  <div class="common-name-display">${formatCommonNameForDisplay(card.back_text)}</div>
+                </div>
+                ${
+                  getExtraBackInfo(card.back_text)
+                    ? `<div class="extra-back-info">${escapeHtml(getExtraBackInfo(card.back_text)).replace(/\n/g, "<br>")}</div>`
+                    : ""
+                }
             <div class="back-actions">
-              ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
-            </div>
+             ${rhsUrl ? `<a class="button-link secondary" href="${escapeHtml(rhsUrl)}" target="_blank" rel="noopener noreferrer">RHS plant page</a>` : ""}
+             </div>
           </div>
         </div>
-      </div>
-    </div>
 
     <div class="study-controls">
       <button class="nav-btn secondary" onclick="prevCard()" ${currentIndex === 0 ? "disabled" : ""}>Previous</button>
